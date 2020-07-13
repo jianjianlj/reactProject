@@ -6,6 +6,8 @@ import UserEdit from '../components/User/UserEdit.js';
 import Shop from '../components/Shop';
 import News from '../components/News';
 import Login from '../pages/login/login';
+import Error from '../pages/Error/Error';
+import BindThisOrEs6 from '../pages/BindThisOrEs6/BindThisOrEs6';
 
 let routerConfig = [
     {
@@ -17,9 +19,9 @@ let routerConfig = [
       children:[],
     },
     {
-      path: "/shop",
-      component: Shop,
-      name: "商店",
+      path: "/BindThisOrEs6",
+      component: BindThisOrEs6,
+      name: "示例一:bind/this",
       children:[],
       auth: true,
     },
@@ -31,7 +33,7 @@ let routerConfig = [
     },
     {
       path: "/404",
-      component: Login,
+      component: Error,
       name: "报错",
       children:[],
     },

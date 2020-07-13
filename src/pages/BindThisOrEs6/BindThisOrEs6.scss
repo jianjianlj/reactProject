@@ -1,0 +1,37 @@
+
+.bind-es6 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .content-font {
+    font-size: 18px;
+    text-align: left;
+  }
+  .bind {
+    margin-right: 20px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    .bind-btn {
+      
+    }
+  }
+  .es6 {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    .es6-btn {
+
+    }
+  }
+}

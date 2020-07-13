@@ -95,26 +95,19 @@ class FrontendAuth extends Component {
     };
     if(isLogin){
       // 如果是登陆状态，想要跳转到登陆，重定向到主页
-      alert('11111')
       if(pathname === '/login'){
-        console.log(pathname);
-        alert('12123123')
         return <Redirect to='/' />
       }else{
         // 如果路由合法，就跳转到相应的路由
         if(targetRouterConfig&&targetRouterConfig.path){
-          // return <Route path={pathname} component={targetRouterConfig.component} />
-          alert('222');
           return navleft(targetRouterConfig);
         }else{
-          alert(3333)
           // 如果路由不合法，重定向到 404 页面
           return <Redirect to='/404' />
         }
       }
     }else{
       // 非登陆状态下，当路由合法时且需要权限校验时，跳转到登陆页面，要求登陆
-      // alert('00000')
       if(targetRouterConfig&&targetRouterConfig.path){
         if(targetRouterConfig.auth) {
           return <Redirect to='/login' />

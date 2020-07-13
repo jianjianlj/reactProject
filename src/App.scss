@@ -8,6 +8,9 @@
     top: 0;
     left: 0;
   }
+  .main-content {
+    height: 100%;
+  }
   .nav {
     display: flex;
     height: 100%;
@@ -21,6 +24,7 @@
       left: 0;
     }
     .content {
+      height: 100%;
       flex: 1;
       padding-left: 200px;
       padding-top: 20px;
