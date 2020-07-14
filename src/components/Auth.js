@@ -79,6 +79,7 @@ class FrontendAuth extends Component {
       return (
         <div className="main-content">
           <div className="header">
+            react分享
           </div>
           <div className="nav">
             <div className="nav-left">

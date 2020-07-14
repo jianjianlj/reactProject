@@ -14,15 +14,9 @@ class BindThisOrEs6 extends React.Component {
   };
   bindOnClick() {
     console.log ('bind-this',this)
-    // this.setState({
-    //   bindData: this,
-    // })
   };
   es6OnClick = () => {
     console.log('es6-this',this)
-    // this.setState({
-    //   es6Data: this,
-    // })
   };
   render() {
     return (
@@ -30,12 +24,12 @@ class BindThisOrEs6 extends React.Component {
         <div className="bind">
           <Button className="bind-btn btn" onClick={this.bindOnClick} type="primary">bind</Button>
           {/* <Button onClick="this.bindOnClick.bind(this)" type="primary">bind</Button> */}
-          <div className="bind-content content-font">bind:{this.state.bindData}</div>
+          {/* <div className="bind-content content-font">bind:{this.state.bindData}</div> */}
         </div>
         <div className="es6">
           <Button className="es6-btn btn" onClick={this.es6OnClick} type="primary">es6</Button>
           {/* <Button onClick={() => this.es6OnClick} type="primary">es6</Button> */}
-          <div className="es6-content content-font">es6:{this.state.es6Data}</div>
+          {/* <div className="es6-content content-font">es6:{this.state.es6Data}</div> */}
         </div>
       </div>
     );

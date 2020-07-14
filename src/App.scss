@@ -3,10 +3,14 @@
   .header {
     width: 100%;
     height:80px;
-    background: blue;
+    background: #8daae0;
     position: fixed;
     top: 0;
     left: 0;
+    color:#fff;
+    font-size: 25px;
+    line-height: 80px;
+    padding-left: 25px;
   }
   .main-content {
     height: 100%;
