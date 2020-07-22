@@ -8,7 +8,8 @@ import News from '../components/News';
 import Login from '../pages/login/login';
 import Error from '../pages/Error/Error';
 import BindThisOrEs6 from '../pages/BindThisOrEs6/BindThisOrEs6';
-
+import ReactLifeCycleMounting from '../pages/ReactLifeCycleMounting/ReactLifeCycleMounting';
+import ReactLifeCycleUpdating from '../pages/ReactLifeCycleUpdating/ReactLifeCycleUpdating';
 let routerConfig = [
     {
       path: "/",
@@ -21,7 +22,7 @@ let routerConfig = [
     {
       path: "/BindThisOrEs6",
       component: BindThisOrEs6,
-      name: "示例一:bind/this",
+      name: "示例一：bind/this",
       children:[],
       auth: true,
     },
@@ -37,35 +38,42 @@ let routerConfig = [
       name: "报错",
       children:[],
     },
+    // {
+    //   path: "/user",
+    //   component: User,
+    //   name: "用户",
+    //   children:[   /*嵌套路由*/
+    //     {
+    //       path: "/user/",
+    //       component: UserList,
+    //       name: "用户",
+    //       auth: true,
+    //     },
+    //     {
+    //       path: "/user/add",
+    //       component: UserAdd,
+    //       name: "增加",
+    //       auth: true,
+    //     },
+    //     {
+    //       path: "/user/edit",
+    //       component: UserEdit,
+    //       name: "编辑",
+    //       auth: true,
+    //     }
+    //   ]
+    // },
     {
-      path: "/user",
-      component: User,
-      name: "用户",
-      children:[   /*嵌套路由*/
-        {
-          path: "/user/",
-          component: UserList,
-          name: "用户",
-          auth: true,
-        },
-        {
-          path: "/user/add",
-          component: UserAdd,
-          name: "增加",
-          auth: true,
-        },
-        {
-          path: "/user/edit",
-          component: UserEdit,
-          name: "编辑",
-          auth: true,
-        }
-      ]
+      path: "/ReactLifeCycleMounting",
+      component: ReactLifeCycleMounting,
+      name: "示例二：Mounting",
+      auth: true,
+      children:[],
     },
     {
-      path: "/news",
-      component: News,
-      name: "新闻",
+      path: "/ReactLifeCycleUpdating",
+      component: ReactLifeCycleUpdating,
+      name: "示例三：Updating",
       auth: true,
       children:[],
     }
