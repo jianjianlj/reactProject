@@ -7,13 +7,13 @@ const { SubMenu } = Menu;
 class FrontendAuth extends Component {
   componentDidMount() {
     const { location, actions,config } = this.props;
-    console.log("this.props",this.props)
+    // console.log("this.props",this.props)
 
   }
   subMenu = (routes) => {
     return routes?routes.map((route,key) => {
       if((route.path !== '/login') && (route.path !== '/404')){
-        console.log('route.path',route.path);
+        // console.log('route.path',route.path);
         if(route.children.length) {
           return  <SubMenu key={key}  title={route.name} >
                     {
@@ -65,7 +65,7 @@ class FrontendAuth extends Component {
       return router
     };
     const targetRouterConfig = targetRouter();
-    console.log(targetRouterConfig);
+    // console.log(targetRouterConfig);
     if(targetRouterConfig && !targetRouterConfig.auth && (pathname === '/login' || pathname === '/404')){
       const { component } = targetRouterConfig;
       if(pathname === '/login'&&isLogin) {

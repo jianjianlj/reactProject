@@ -7,7 +7,7 @@ export default class Error extends React.Component {
   }
   render() {
     return(
-      <div className="error-page">出错了！！！</div>
+      <div className="error-page">出错了,您访问的页面骄傲突破天际了！！！！</div>
     )
   }
 }

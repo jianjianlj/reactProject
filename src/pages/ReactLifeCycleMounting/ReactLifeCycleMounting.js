@@ -25,7 +25,7 @@ class ReactLifeCycle extends React.Component {
   //   return prevState;
   // };
   componentDidMount() {
-    console.warn('componentWillMount',document.getElementById('life-sycle')) // null
+    console.warn('componentDidMount',document.getElementById('life-sycle')) // null
     const content = document.getElementById('text-content');
     content.innerHTML = 'REACT IS POPULAR!';
   };

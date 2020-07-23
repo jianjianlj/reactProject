@@ -1,27 +1,24 @@
 import Home from '../components/User';
-import User from '../components/User';
-import UserList from '../components/User/UserList';
-import UserAdd from '../components/User/UserAdd';
-import UserEdit from '../components/User/UserEdit.js';
-import Shop from '../components/Shop';
-import News from '../components/News';
 import Login from '../pages/login/login';
 import Error from '../pages/Error/Error';
 import BindThisOrEs6 from '../pages/BindThisOrEs6/BindThisOrEs6';
 import ReactLifeCycleMounting from '../pages/ReactLifeCycleMounting/ReactLifeCycleMounting';
 import ReactLifeCycleUpdating from '../pages/ReactLifeCycleUpdating/ReactLifeCycleUpdating';
+import ReeactRedux from '../pages/ReactRedux/ReactRedux'
 let routerConfig = [
+    // {
+    //   path: "/",
+    //   component: Home,
+    //   exact:true,
+    //   name: "首页",
+    //   auth: true,
+    //   children:[],
+    // },
     {
       path: "/",
-      component: Home,
-      exact:true,
-      name: "首页",
-      auth: true,
-      children:[],
-    },
-    {
-      path: "/BindThisOrEs6",
+      // BindThisOrEs6
       component: BindThisOrEs6,
+      exact:true,
       name: "示例一：bind/this",
       children:[],
       auth: true,
@@ -74,6 +71,13 @@ let routerConfig = [
       path: "/ReactLifeCycleUpdating",
       component: ReactLifeCycleUpdating,
       name: "示例三：Updating",
+      auth: true,
+      children:[],
+    },
+    {
+      path: "/ReeactRedux",
+      component: ReeactRedux,
+      name: "示例四：redux",
       auth: true,
       children:[],
     }
