@@ -5,6 +5,7 @@ import BindThisOrEs6 from '../pages/BindThisOrEs6/BindThisOrEs6';
 import ReactLifeCycleMounting from '../pages/ReactLifeCycleMounting/ReactLifeCycleMounting';
 import ReactLifeCycleUpdating from '../pages/ReactLifeCycleUpdating/ReactLifeCycleUpdating';
 import ReeactRedux from '../pages/ReactRedux/ReactRedux'
+import Example from '../pages/HookCase/HookCase';
 let routerConfig = [
     // {
     //   path: "/",
@@ -35,31 +36,6 @@ let routerConfig = [
       name: "报错",
       children:[],
     },
-    // {
-    //   path: "/user",
-    //   component: User,
-    //   name: "用户",
-    //   children:[   /*嵌套路由*/
-    //     {
-    //       path: "/user/",
-    //       component: UserList,
-    //       name: "用户",
-    //       auth: true,
-    //     },
-    //     {
-    //       path: "/user/add",
-    //       component: UserAdd,
-    //       name: "增加",
-    //       auth: true,
-    //     },
-    //     {
-    //       path: "/user/edit",
-    //       component: UserEdit,
-    //       name: "编辑",
-    //       auth: true,
-    //     }
-    //   ]
-    // },
     {
       path: "/ReactLifeCycleMounting",
       component: ReactLifeCycleMounting,
@@ -80,7 +56,14 @@ let routerConfig = [
       name: "示例四：redux",
       auth: true,
       children:[],
-    }
+    },
+    {
+      path: "/Example",
+      component: Example,
+      name: "示例五：hooks",
+      auth: true,
+      children:[],
+    },
 ];
 export {
   routerConfig,

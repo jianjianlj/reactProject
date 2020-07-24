@@ -16,6 +16,7 @@ class ReactRedux extends React.Component {
       <div className="react-router">
         <Button type="primary" onClick={this.props.changeValue}  className="router-btn">修改store的值</Button>
         <Button type="primary" onClick={this.props.clearValue}  className="router-btn">清空</Button>
+        {/* <Button onClick={this.props.clearValue}  className="router-btn">清空</Button> */}
         <div className="router-info">{this.props.loginInfo}</div>
       </div>
     )

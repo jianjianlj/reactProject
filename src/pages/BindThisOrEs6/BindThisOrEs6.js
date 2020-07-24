@@ -10,7 +10,7 @@ class BindThisOrEs6 extends React.Component {
     }
     //bind的第一个参数是this指向，第二个参数是传入的数据
     // call, apply -- 立即执行 call (this,'参数一' ...) apply 参数（this,[]）;
-    this.bindOnClick = this.bindOnClick.bind(this);
+    // this.bindOnClick = this.bindOnClick.bind;
   };
   bindOnClick() {
     console.log ('bind-this',this)
